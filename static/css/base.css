@@ -23,6 +23,7 @@ header h1 a {
 .nav_right{
     display: flex;
     padding-top: 2rem;
+    float: left;
 }
 
 .post-entry{
