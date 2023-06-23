@@ -1,0 +1,9 @@
+
+<h1 style="text-align: center;font-family: sans-serif;color: blueviolet;">Message Board</h1>
+{% for post  in all_posts %} 
+<div>
+<p>{{post.text}}</p>
+</div>
+<hr>
+
+{% endfor %}
