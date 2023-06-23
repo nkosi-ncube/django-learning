@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+
+{% for post in all_blogs %} 
+
+<h1><strong><a href="{% url 'post_detail' post.pk %}">{{post.title}}</a></strong></h1>
+<p>{{post.body}}</p>
+<cite>{{post.date}}|{{post.author}}</cite>
+
+{% endfor %}
+{% endblock content %}
